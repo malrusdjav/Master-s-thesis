@@ -1,2 +1,1 @@
-# training-programs
-Programs that are written for educational purposes are stored here
+This is my master's projec
