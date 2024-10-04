@@ -1,8 +1,9 @@
 from ase import Atoms
 from ase.calculators.emt import EMT
 from ase.optimize import QuasiNewton
+for d in range (1.6, 1.8, 0.1)
 
-d = 2.5 #starting
+d = 2.5 #starting geometry
 system = Atoms('H2', positions=[[0.0, 0.0, 0.0],
                                     [0.0, 0.0, d]])
 calc = EMT()
