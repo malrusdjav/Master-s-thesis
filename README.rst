@@ -1,5 +1,6 @@
+===========================
 This is my master's project
-============================
+===========================
 
 to install my working environment on Win11 NB:
 
@@ -11,7 +12,7 @@ to install my working environment on Win11 NB:
   pip install ase
   pip install --upgrade numpy=1.26.4 (not the newest numpy !)
   pip install pytest
-   sudo apt-get install python3-tk
+  sudo apt-get install python3-tk
 
 
   ase test
