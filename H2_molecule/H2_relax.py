@@ -7,7 +7,7 @@ system = Atoms('H2', positions=[[0.0, 0.0, 0.0],
                                     [0.0, 0.0, 1.0]])
 calc = EMT()#effective medium theory
 
-system.calc = calc
+system.calc = calc #calculator
 
 # print the (decreasing) total energy for each iteration until it converges, leaving the file h2.emt.traj in the working directory. Use the command ase gui to view the trajectory file, showing each step of the optimization.
 opt = QuasiNewton(system, trajectory='h2.emt.traj')
