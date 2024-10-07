@@ -5,7 +5,7 @@ from ase.optimize import QuasiNewton
 
 system = Atoms('H2', positions=[[0.0, 0.0, 0.0],
                                     [0.0, 0.0, 1.0]])
-calc = EMT()
+calc = EMT()#effective medium theory
 
 system.calc = calc
 
