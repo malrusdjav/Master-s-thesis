@@ -13,4 +13,4 @@
  dft
   xc  b3lyp
  end
- task dft
+ task dft optimize
