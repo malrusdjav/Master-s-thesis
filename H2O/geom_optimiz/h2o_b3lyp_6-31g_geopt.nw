@@ -6,6 +6,7 @@
    H      0.00000000    1.43042809   -1.10715266  
    H      0.00000000   -1.43042809   -1.10715266 
  end  
+ driver; xyz h2o_geometry_step; end
  basis  
    H library 6-31g  
    O library 6-31g  
