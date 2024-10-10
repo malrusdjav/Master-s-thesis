@@ -15,5 +15,16 @@ opt.run(fmax=0.05)
 
 print (moleculeN2.get_distance(0,1))
 
-
+a = 5.387
+crystal = Atoms('Zn4S4',
+                scaled_positions=[[0., 0., 0.],
+                           [0., 0.5, 0.5],
+                           [0.5, 0., 0.5],
+                           [0.5, 0.5, 0.],
+                           [0.25, 0.75, 0.75],
+                           [0.25, 0.25, 0.25],
+                           [0.75, 0.75, 0.25],
+                           [0.75, 0.25, 0.75]],
+               cell=[a, a, a],
+               pbc=True)
 #view(moleculeN2)
