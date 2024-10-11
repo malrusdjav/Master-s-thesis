@@ -10,7 +10,15 @@
      - Density functional theory (DFT)
      - Effective medium theory (EMT)
      - Experimental data (exp)
-     - Row 1, column 3
-   * - Row 2, column 1
+   * - Density functional theory (DFT)
      - Row 2, column 2
      - Row 2, column 3
+     - Row 2, column 4
+   * - Effective medium theory (EMT)
+     - Row 3, column 2
+     - Row 3, column 3
+     - Row 3, column 4
+   * - Experimental data (exp)
+     - Row 4, column 2
+     - Row 4, column 3
+     - Row 4, column 4
