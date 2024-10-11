@@ -1,4 +1,4 @@
-..flat-table:: Bond energy for some molecules
+.. flat-table:: Bond energy for some molecules
    :widths: 25 25 50
    :header-rows: 1
 
