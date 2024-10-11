@@ -1,0 +1,9 @@
+title "Cl2 cc-pvdz SCF geometry optimization"
+geometry
+cl 0 0 0
+cl 0 0 1.50
+end
+basis
+cl library cc-pvdz
+end
+task scf optimize
