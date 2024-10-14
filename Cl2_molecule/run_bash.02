@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#proj=N2_hf_ccpvdz_geopt
+#proj=cl2_scf_6-31g.nw
+proj=cl2_b3lyp_6-31g
+
+echo "running nwchem job for project=$proj"
+
+#mpirun -np 4 /usr/bin/nwchem  $proj.nw > $proj.out
+mpirun -np 4 /usr/bin/nwchem  $proj.nw > $proj.out_SAVED

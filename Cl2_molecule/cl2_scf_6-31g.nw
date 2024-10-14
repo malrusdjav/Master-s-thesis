@@ -3,7 +3,7 @@ start chlorine
 
  geometry units au noautoz
    Cl      0.00000000    0.00000000    0.00000000
-   Cl      0.00000000    1.43042809   -1.10715266
+   Cl      0.00000000    0.0           1.50       
  end
  basis
    Cl library 6-31g

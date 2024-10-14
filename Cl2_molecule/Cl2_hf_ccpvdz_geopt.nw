@@ -1,4 +1,4 @@
-title "Cl2 cc-pvdz SCF geometry optimization"
+title "Cl2 cc-pvdz HF-SCF geometry optimization"
 geometry
 cl 0 0 0
 cl 0 0 1.50
