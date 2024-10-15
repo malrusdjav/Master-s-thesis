@@ -1,0 +1,18 @@
+start nh3
+ title "Ammonia in 6-31g basis set"
+
+ geometry units au noautoz
+   N      0.00000000    0.00000000    0.00000000
+   H      0.00000000    2.43042809    2.10715266
+   H      0.00000000   -1.43042809    5.10715266
+   H      0.00000000    3.43042809   -2.10715266
+ end
+ basis
+   N library 6-31g
+   H library 6-31g
+ end
+ dft
+  xc  b3lyp
+  iterations 100
+ end
+ task dft
