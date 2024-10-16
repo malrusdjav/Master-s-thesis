@@ -10,7 +10,9 @@ nh3coor = ase.io.read('./avogadro/nh3_uff.xyz', format='xyz',index=":")
 print(nh3coor)
 print(nh3coor[0])
 print(nh3coor[0].symbols)
-print(nh3coor[0].positions)
+
+#print(nh3coor[0].positions)
+
 
 #nh3 = Atoms('NH3',positions=[[0, 0, 0],[0, 2.4, 2.1],[0, -1.4, 5.1],[0, 3.4, -2.1]])
 nh3 = Atoms('NH3',positions=nh3coor[0].positions)
