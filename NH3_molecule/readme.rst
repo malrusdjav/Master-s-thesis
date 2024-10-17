@@ -1,4 +1,7 @@
 =====================================
 readme file for the ammonia molecule
 ======================================
-the link to the database tutorial: https://wiki.fysik.dtu.dk/ase/ase/db/db.html#what-s-in-the-database
+some links to the database tutorial: 
+https://wiki.fysik.dtu.dk/ase/tutorials/tut06_database/database.html
+
+https://wiki.fysik.dtu.dk/ase/ase/db/db.html#what-s-in-the-database
