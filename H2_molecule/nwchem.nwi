@@ -1,0 +1,26 @@
+title "nwchem"
+
+permanent_dir /home/ruslan/work/Master-s-thesis/H2_molecule/nwchem
+
+scratch_dir /home/ruslan/work/Master-s-thesis/H2_molecule/nwchem
+
+start nwchem
+
+geometry units angstrom nocenter noautosym noautoz
+  H  0.0000000000000000e+00 0.0000000000000000e+00 1.2306240759149407e-01
+  H  -1.8053686812117812e-17 0.0000000000000000e+00 8.7693759240850588e-01
+end
+
+basis noprint
+   * library 3-21G
+end
+
+dft
+  xc xpbe96 cpbe96
+  mult 1
+end
+
+
+
+task dft gradient
+

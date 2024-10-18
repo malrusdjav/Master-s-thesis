@@ -3,6 +3,7 @@ from ase.optimize import BFGS
 from ase.calculators.nwchem import NWChem
 import ase.io
 from ase.visualize import view
+from ase.io import write
 #from pathlib import Path
 
 nh3coor = ase.io.read(filename='./avogadro/nh3_uff.xyz', format='xyz',index=":")
@@ -20,7 +21,7 @@ nh3 = Atoms('NH3',positions=nh3coor[0].positions)
 
 nh3.calc = NWChem(dft=dict(iterations=500,xc='B3LYP'))
 opt = BFGS(nh3, trajectory='nh3.traj')
-#opt.run(fmax=0.02)
+opt.run(fmax=0.02)
 
 print('NH3 positions:')
 print(nh3.positions)
@@ -44,3 +45,4 @@ print("Angles: ", nh3.get_angle(0, 1, 2), nh3.get_angle(1,2,3), nh3.get_angle(1,
 print(f"massess  : {nh3.get_masses()}") #distances (displayed as an array)
 for i in range(len(nh3)): #distances for each atom in the molecule
 	print(f"mass {i} : {nh3.get_masses()[i]}")
+write('NH3_nwchem.xyz', nh3)

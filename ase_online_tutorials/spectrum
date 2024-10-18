@@ -1,0 +1,27 @@
+kpointpath = si_fcc.cell.bandpath(path='LGXWKG', density=20)
+kpointpath.special_points
+control.update({'calculation':"bands"})
+system.update({'nbnd':12})
+electrons.update({'conv_thr': 1.e-6})
+bands_directory = Path('./si_fcc/bands').absolute()
+
+bands_calc = Espresso(directory=bands_directory,
+                  input_data={'control': control,
+                              'system': system,
+                              'electrons':electrons},
+                  pseudopotentials=atomic_species, 
+                  profile=profile_4pools,
+                  kpts=kpointpath) 
+si_fcc_bands = si_fcc.copy()
+si_fcc_bands.calc = bands_calc
+results_bands = si_fcc_bands.get_properties(['eigenvalues']) 
+from ase.spectrum.band_structure import BandStructure
+si_fcc_band_structure = BandStructure(path=kpointpath, 
+                           energies=results_bands['eigenvalues'], reference=si_fcc.calc.get_fermi_level())
+bandplot = si_fcc_band_structure.plot(emin=-6, emax=15)
+bandplot.figure.savefig('band_structure_Si.png')
+
+
+
+ 
+

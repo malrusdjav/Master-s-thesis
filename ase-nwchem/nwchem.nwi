@@ -1,0 +1,26 @@
+title "nwchem"
+
+permanent_dir /home/ruslan/work/Master-s-thesis/ase-nwchem/nwchem
+
+scratch_dir /home/ruslan/work/Master-s-thesis/ase-nwchem/nwchem
+
+start nwchem
+
+geometry units angstrom nocenter noautosym noautoz
+  H  0.0000000000000000e+00 0.0000000000000000e+00 2.3059637172998800e-02
+  H  -7.1919632519376147e-19 -8.2075225948558314e-20 7.7694036282700130e-01
+end
+
+basis noprint
+   * library 3-21G
+end
+
+dft
+  xc xpbe96 cpbe96
+  mult 1
+end
+
+
+
+task dft gradient
+
