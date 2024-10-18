@@ -37,9 +37,10 @@ ase.io.write(filename="nh3_new.xyz", images=nh3, format="xyz")
 print(nh3)
 
 for i in range(len(nh3)):
-	print(f'position {i}: atom {nh3[0].symbols}') #I want to print the positions of each atom in the molecule like: N [x1, y1, z1] H [x2, y2, z2] H [x3, y3, z3] H [x4, y4, z4]. How to do that?
+	print(f'position {i}: atom {nh3.symbols:}') 
 print("Distance: ", nh3.get_distance(0, 1))       
-print(f"Numbers of atoms  : {len(nh3)}")
-print("Angles: ", nh3.get_angle(0, 1, 2), nh3.get_angle(1,2,3), nh3.get_angle(1,2,3))
-#print("Angles are: ", angles)
-print(f"massess  : {nh3.get_masses()}")
+print(f"Numbers of atoms  : {len(nh3)}") #number of atoms in the molecule
+print("Angles: ", nh3.get_angle(0, 1, 2), nh3.get_angle(1,2,3), nh3.get_angle(1,2,3)) #all unique angles
+print(f"massess  : {nh3.get_masses()}") #distances (displayed as an array)
+for i in range(len(nh3)): #distances for each atom in the molecule
+	print(f"mass {i} : {nh3.get_masses()[i]}")
