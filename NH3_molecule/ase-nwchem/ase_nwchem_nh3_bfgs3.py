@@ -4,7 +4,6 @@ from ase.calculators.nwchem import NWChem
 import ase.io
 from ase.visualize import view
 from ase.io import write
-#from pathlib import Path
 
 nh3coor = ase.io.read(filename='./avogadro/nh3_uff.xyz', format='xyz',index=":")
 #view(nh3coor)
@@ -19,9 +18,12 @@ print("initial NH3 positions : \n ", nh3coor[0].positions)
 #nh3 = Atoms('NH3',positions=[[0, 0, 0],[0, 2.4, 2.1],[0, -1.4, 5.1],[0, 3.4, -2.1]])
 nh3 = Atoms('NH3',positions=nh3coor[0].positions)
 
-nh3.calc = NWChem(dft=dict(iterations=500,xc='B3LYP'))
-opt = BFGS(nh3, trajectory='nh3.traj')
-opt.run(fmax=0.02)
+exc_corr = ['B3LYP', 'PBE'] # exchange correlation functionals
+
+for i in range(len(exc_corr)):
+	nh3.calc = NWChem(dft=dict(iterations=500,xc=exc_corr[i]))
+	opt = BFGS(nh3, trajectory='nh3.traj')
+	opt.run(fmax=0.02)
 
 print('NH3 positions:')
 print(nh3.positions)
@@ -29,12 +31,6 @@ print(nh3.positions)
 print('file with final coordinates written ... nh3_new.xyz')
 ase.io.write(filename="nh3_new.xyz", images=nh3, format="xyz")
 
-#for i in range(len(nh3)):
-#    for j in range(len(nh3)):
-#	for k in range(len(nh3)):
-#	    print(nh3.get_angle(i,j,k))
-# nested list comprehensions
-#angles = [[[print(nh3.get_angle(i,j,k))] for i in range(len(nh3)) for j in range(len(nh3))] for k in range(len(nh3))]
 print(nh3)
 
 for i in range(len(nh3)):

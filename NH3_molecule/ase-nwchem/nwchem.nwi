@@ -19,7 +19,7 @@ end
 
 dft
   iterations 500
-  xc B3LYP
+  xc PBE
   mult 1
 end
 
