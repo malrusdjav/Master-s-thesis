@@ -38,7 +38,7 @@
 
     hostname        = DESKTOP-M7D5GNM
     program         = nwchem
-    date            = Mon Oct 21 15:31:35 2024
+    date            = Tue Oct 29 23:09:04 2024
 
     compiled        = Sat_Apr_09_17:12:10_2022
     source          = /build/nwchem-f1f4gx/nwchem-7.0.2/build-openmpi
@@ -94,10 +94,10 @@
 
   No.       Tag          Charge          X              Y              Z
  ---- ---------------- ---------- -------------- -------------- --------------
-    1 N                    7.0000    -1.70773162     0.04503966    -0.00562454
-    2 H                    1.0000    -0.68599120     0.05963194     0.00313757
-    3 H                    1.0000    -2.05634874    -0.78791234     0.47285447
-    4 H                    1.0000    -2.05635490     0.07659802    -0.96571599
+    1 N                    7.0000    -1.74637274     0.13869762     0.05065158
+    2 H                    1.0000    -0.69875431     0.02063784    -0.02030695
+    3 H                    1.0000    -2.03063841    -0.80310005     0.43624833
+    4 H                    1.0000    -2.03065425     0.03711764    -0.96193811
 
       Atomic Mass 
       ----------- 
@@ -106,32 +106,32 @@
       H                  1.007825
 
 
- Effective nuclear repulsion energy (a.u.)      11.8204592932
+ Effective nuclear repulsion energy (a.u.)      11.4903135287
 
             Nuclear Dipole moment (a.u.) 
             ----------------------------
         X                 Y               Z
  ---------------- ---------------- ----------------
-   -31.6582320425    -0.6357128120    -0.9998459205
+   -32.0963461654     0.4262064538    -0.3617609313
 
 
             XYZ format geometry
             -------------------
      4
  geometry
- N                    -1.70773162     0.04503966    -0.00562454
- H                    -0.68599120     0.05963194     0.00313757
- H                    -2.05634874    -0.78791234     0.47285447
- H                    -2.05635490     0.07659802    -0.96571599
+ N                    -1.74637274     0.13869762     0.05065158
+ H                    -0.69875431     0.02063784    -0.02030695
+ H                    -2.03063841    -0.80310005     0.43624833
+ H                    -2.03065425     0.03711764    -0.96193811
 
  ==============================================================================
                                 internuclear distances
  ------------------------------------------------------------------------------
        center one      |      center two      | atomic units |  angstroms
  ------------------------------------------------------------------------------
-    2 H                |   1 N                |     1.93108  |     1.02188
-    3 H                |   1 N                |     1.93112  |     1.02190
-    4 H                |   1 N                |     1.93114  |     1.02191
+    2 H                |   1 N                |     1.99675  |     1.05664
+    3 H                |   1 N                |     1.99675  |     1.05663
+    4 H                |   1 N                |     1.99675  |     1.05663
  ------------------------------------------------------------------------------
                          number of included internuclear distances:          3
  ==============================================================================
@@ -143,9 +143,9 @@
  ------------------------------------------------------------------------------
         center 1       |       center 2       |       center 3       |  degrees
  ------------------------------------------------------------------------------
-    2 H                |   1 N                |   3 H                |   110.41
-    2 H                |   1 N                |   4 H                |   110.41
-    3 H                |   1 N                |   4 H                |   110.41
+    2 H                |   1 N                |   3 H                |   101.05
+    2 H                |   1 N                |   4 H                |   101.05
+    3 H                |   1 N                |   4 H                |   101.05
  ------------------------------------------------------------------------------
                             number of included internuclear angles:          3
  ==============================================================================
@@ -153,168 +153,428 @@
 
 
 
- xc [acm],
- [b3lyp     ],
- [beckehandh],
- [HFexch    ],
- [becke88   ],
- [lyp       ],
- [perdew81  ],
- [perdew86  ],
- [perdew91  ],
- [pw91lda   ],
- [slater    ],
- [vwn_1     ],
- [vwn_2     ],
- [vwn_3     ],
- [vwn_4     ],
- [vwn_5     ],
- [vwn_1_rpa ],
- [hcth      ],
- [becke97   ],
- [becke97-1 ],
- [cpbe96    ],
- [xpbe96    ],
- [gill96    ],
- [xperdew91 ],
- [xhcth     ],
- [xbecke97  ],
- [xbecke97-1],
- [chcth     ],
- [cbecke97  ],
- [cbecke97-1],
- [hcth120   ],
- [hcth147   ],
- [becke98   ],
- [pbe0      ],
- [becke97gga],
- [hcth407   ],
- [hcthp14   ],
- [optx      ],
- [optc      ],
- [becke97-2 ],
- [mpw91     ],
- [ft97      ],
- [xft97     ],
- [cft97     ],
- [xpkzb99   ],
- [mpw1k     ],
- [cpkzb99   ],
- [hcth407p  ],
- [xtpss03   ],
- [ctpss03   ],
- [xctpssh   ],
- [becke97-3 ],
- [op        ],
- [bop       ],
- [pbeop     ],
- [rpbe      ],
- [revpbe    ],
- [bc95      ],
- [mpw1b95   ],
- [mpwb1k    ],
- [b1b95     ],
- [bb1k      ],
- [pw6b95    ],
- [pwb6k     ],
- [m05       ],
- [m05-2x    ],
- [xpw6b95   ],
- [cpw6b95   ],
- [xpwb6k    ],
- [cpwb6k    ],
- [xm05      ],
- [cm05      ],
- [xm05-2x   ],
- [cm05-2x   ],
- [vs98      ],
- [xvs98     ],
- [cvs98     ],
- [m06-L     ],
- [xm06-L    ],
- [cm06-L    ],
- [m06-hf    ],
- [xm06-hf   ],
- [cm06-hf   ],
- [m06       ],
- [revm06    ],
- [revm06-L  ],
- [xm06      ],
- [cm06      ],
- [m06-2x    ],
- [xm06-2x   ],
- [cm06-2x   ],
- [m08-hx    ],
- [xm08-hx   ],
- [cm08-hx   ],
- [m08-so    ],
- [xm08-so   ],
- [cm08-so   ],
- [m11       ],
- [xm11      ],
- [cm11      ],
- [m11-l     ],
- [xm11-l    ],
- [cm11-l    ],
- [sogga     ],
- [xsogga    ],
- [csogga    ],
- [sogga11   ],
- [xsogga11  ],
- [csogga11  ],
- [sogga11-x ],
- [xsogga11-x],
- [csogga11-x],
- [n12       ],
- [xn12      ],
- [cn12      ],
- [cn12-sx   ],
- [xbnl07    ],
- [becke97-d ],
- [xcamb88   ],
- [xcampbe96 ],
- [mp2       ],
- [b2plyp    ],
- [xcamlsd   ],
- [xwpbe     ],
- [ssb-d     ],
- [kt1       ],
- [kt2       ],
- [bhlyp     ],
- [b3p86     ],
- [b3pw91    ],
- [pbe96     ],
- [dldf      ],
- [srhfexch  ],
- [hse03     ],
- [s12g      ],
- [s12h      ],
- [cam-s12g  ],
- [cam-s12h  ],
- [becke86b  ],
- [xperdew86 ],
- [xmvs15    ],
- [cvpbe09   ],
- [mvs       ],
- [hle16     ],
- [scan      ],
- [scanl     ],
- [scan0     ],
- [lb94      ],
- [rscan     ],
- [xncap     ],
- [ncap      ],
- ------------------------------------------------------------------------
- xc_input: invalid format                   0
- ------------------------------------------------------------------------
- ------------------------------------------------------------------------
-  current input line : 
-    22:   xc PBE
- ------------------------------------------------------------------------
- ------------------------------------------------------------------------
- There is an error in the input file
- ------------------------------------------------------------------------
- For more information see the NWChem manual at https://github.com/nwchemgit/nwchem/wiki
+                                 NWChem DFT Module
+                                 -----------------
 
 
- For further details see manual section:                                                                                                                                                                                                                                                                
+                                      nwchem
+
+
+
+
+ Summary of "ao basis" -> "ao basis" (cartesian)
+ ------------------------------------------------------------------------------
+       Tag                 Description            Shells   Functions and Types
+ ---------------- ------------------------------  ------  ---------------------
+ N                           sto-3g                  3        5   2s1p
+ H                           sto-3g                  1        1   1s
+
+
+  Caching 1-el integrals 
+
+            General Information
+            -------------------
+          SCF calculation type: DFT
+          Wavefunction type:  closed shell.
+          No. of atoms     :     4
+          No. of electrons :    10
+           Alpha electrons :     5
+            Beta electrons :     5
+          Charge           :     0
+          Spin multiplicity:     1
+          Use of symmetry is: off; symmetry adaption is: off
+          Maximum number of iterations: 500
+          AO basis - number of functions:     8
+                     number of shells:     6
+          Convergence on energy requested:  1.00D-06
+          Convergence on density requested:  1.00D-05
+          Convergence on gradient requested:  5.00D-04
+
+              XC Information
+              --------------
+                         PBE0 Method XC Functional
+                     Hartree-Fock (Exact) Exchange  0.250          
+          PerdewBurkeErnzerhof Exchange Functional  0.750          
+            Perdew 1991 LDA Correlation Functional  1.000 local    
+           PerdewBurkeErnz. Correlation Functional  1.000 non-local
+
+             Grid Information
+             ----------------
+          Grid used for XC integration:  medium    
+          Radial quadrature: Mura-Knowles        
+          Angular quadrature: Lebedev. 
+          Tag              B.-S. Rad. Rad. Pts. Rad. Cut. Ang. Pts.
+          ---              ---------- --------- --------- ---------
+          N                   0.65       49           5.0       434
+          H                   0.35       45           6.0       434
+          Grid pruning is: on 
+          Number of quadrature shells:   184
+          Spatial weights used:  Erf1
+
+          Convergence Information
+          -----------------------
+          Convergence aids based upon iterative change in 
+          total energy or number of iterations. 
+          Levelshifting, if invoked, occurs when the 
+          HOMO/LUMO gap drops below (HL_TOL):  1.00D-02
+          DIIS, if invoked, will attempt to extrapolate 
+          using up to (NFOCK): 10 stored Fock matrices.
+
+                    Damping( 0%)  Levelshifting(0.5)       DIIS
+                  --------------- ------------------- ---------------
+          dE  on:    start            ASAP                start   
+          dE off:    2 iters        500 iters           500 iters 
+
+
+      Screening Tolerance Information
+      -------------------------------
+          Density screening/tol_rho:  1.00D-10
+          AO Gaussian exp screening on grid/accAOfunc:  14
+          CD Gaussian exp screening on grid/accCDfunc:  20
+          XC Gaussian exp screening on grid/accXCfunc:  20
+          Schwarz screening/accCoul:  1.00D-08
+
+
+      Superposition of Atomic Density Guess
+      -------------------------------------
+
+ Sum of atomic energies:         -55.01595943
+
+      Non-variational initial energy
+      ------------------------------
+
+ Total energy =     -54.998156
+ 1-e energy   =     -97.645463
+ 2-e energy   =      31.156994
+ HOMO         =      -0.225722
+ LUMO         =       0.528321
+
+   Time after variat. SCF:      0.1
+   Time prior to 1st pass:      0.1
+
+ #quartets = 2.310D+02 #integrals = 6.630D+02 #direct =  0.0% #cached =100.0%
+
+
+ Integral file          = /home/ruslan/work/Master-s-thesis/NH3_molecule/ase-nwchem/nwchem/nwchem.aoints.0
+ Record size in doubles =    65536    No. of integs per rec  =    43688
+ Max. records in memory =        2    Max. records in file   =  1852581
+ No. of bits per label  =        8    No. of bits per value  =       64
+
+
+ Grid_pts file          = /home/ruslan/work/Master-s-thesis/NH3_molecule/ase-nwchem/nwchem/nwchem.gridpts.0
+ Record size in doubles =  12289        No. of grid_pts per rec  =   3070
+ Max. records in memory =     30        Max. recs in file   =   9879632
+
+
+           Memory utilization after 1st SCF pass: 
+           Heap Space remaining (MW):       12.61            12606552
+          Stack Space remaining (MW):       13.11            13106996
+
+   convergence    iter        energy       DeltaE   RMS-Dens  Diis-err    time
+ ---------------- ----- ----------------- --------- --------- ---------  ------
+ d= 0,ls=0.0,diis     1    -55.7196023065 -6.72D+01  5.10D-02  8.91D-02     0.3
+ d= 0,ls=0.0,diis     2    -55.7253100209 -5.71D-03  2.49D-02  4.19D-02     0.4
+ d= 0,ls=0.0,diis     3    -55.7317789157 -6.47D-03  2.24D-03  4.64D-04     0.5
+ d= 0,ls=0.0,diis     4    -55.7318501809 -7.13D-05  2.05D-04  3.15D-07     0.6
+ d= 0,ls=0.0,diis     5    -55.7318502837 -1.03D-07  3.71D-06  3.01D-10     0.8
+
+
+         Total DFT energy =      -55.731850283685
+      One electron energy =      -98.219398374369
+           Coulomb energy =       38.987605283929
+    Exchange-Corr. energy =       -7.990370721984
+ Nuclear repulsion energy =       11.490313528738
+
+ Numeric. integr. density =       10.000000161644
+
+     Total iterative time =      0.7s
+
+
+
+                       DFT Final Molecular Orbital Analysis
+                       ------------------------------------
+
+ Vector    1  Occ=2.000000D+00  E=-1.415095D+01
+              MO Center= -1.7D+00,  1.4D-01,  5.0D-02, r^2= 2.0D-02
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     1      0.992573  1 N  s                  2      0.035283  1 N  s          
+
+ Vector    2  Occ=2.000000D+00  E=-8.258602D-01
+              MO Center= -1.7D+00, -8.1D-02, -8.2D-02, r^2= 7.4D-01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     2      0.730758  1 N  s                  1     -0.216861  1 N  s          
+     6      0.158300  2 H  s                  7      0.158301  3 H  s          
+     8      0.158301  4 H  s                  4     -0.156366  1 N  py         
+     5     -0.093967  1 N  pz                 3      0.064498  1 N  px         
+
+ Vector    3  Occ=2.000000D+00  E=-3.998239D-01
+              MO Center= -1.8D+00,  3.5D-02, -2.4D-01, r^2= 9.9D-01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     8     -0.502126  4 H  s                  5      0.489477  1 N  pz         
+     3      0.302541  1 N  px                 6      0.268843  2 H  s          
+     7      0.233283  3 H  s                  4     -0.169353  1 N  py         
+
+ Vector    4  Occ=2.000000D+00  E=-3.998238D-01
+              MO Center= -1.6D+00, -1.1D-01,  1.3D-01, r^2= 9.9D-01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     3      0.477798  1 N  px                 7     -0.445119  3 H  s          
+     6      0.424589  2 H  s                  4      0.310082  1 N  py         
+     5     -0.188038  1 N  pz         
+
+ Vector    5  Occ=2.000000D+00  E=-1.730502D-01
+              MO Center= -1.8D+00,  3.0D-01,  1.5D-01, r^2= 6.1D-01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     4      0.668210  1 N  py                 2      0.568545  1 N  s          
+     5      0.401553  1 N  pz                 3     -0.275624  1 N  px         
+     6     -0.157211  2 H  s                  7     -0.157210  3 H  s          
+     8     -0.157210  4 H  s                  1     -0.117433  1 N  s          
+
+ Vector    6  Occ=0.000000D+00  E= 3.783930D-01
+              MO Center= -1.6D+00, -2.3D-01, -1.7D-01, r^2= 1.3D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     2      1.129387  1 N  s                  6     -0.682028  2 H  s          
+     7     -0.682010  3 H  s                  8     -0.681997  4 H  s          
+     4     -0.542120  1 N  py                 5     -0.325771  1 N  pz         
+     3      0.223631  1 N  px                 1     -0.171774  1 N  s          
+
+ Vector    7  Occ=0.000000D+00  E= 4.303194D-01
+              MO Center= -1.4D+00, -8.2D-02,  7.5D-02, r^2= 1.1D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     3      0.915149  1 N  px                 6     -0.919450  2 H  s          
+     7      0.678721  3 H  s                  4      0.414841  1 N  py         
+     8      0.240762  4 H  s                  5     -0.062147  1 N  pz         
+
+ Vector    8  Occ=0.000000D+00  E= 4.303204D-01
+              MO Center= -1.9D+00, -7.2D-02, -2.3D-01, r^2= 1.1D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     8      0.922715  4 H  s                  5      0.877833  1 N  pz         
+     7     -0.669840  3 H  s                  4     -0.423700  1 N  py         
+     3      0.251679  1 N  px                 6     -0.252847  2 H  s          
+
+
+ center of mass
+ --------------
+ x =  -3.24657919 y =   0.13218730 z =   0.01764788
+
+ moments of inertia (a.u.)
+ ------------------
+           7.131857222956          -0.740860169270          -0.445207623197
+          -0.740860169270           8.622380487126           1.079342716386
+          -0.445207623197           1.079342716386           7.474910320652
+
+     Multipole analysis of the density
+     ---------------------------------
+
+     L   x y z        total         alpha         beta         nuclear
+     -   - - -        -----         -----         ----         -------
+     0   0 0 0     -0.000000     -5.000000     -5.000000     10.000000
+
+     1   1 0 0      0.260053     16.178200     16.178200    -32.096346
+     1   0 1 0     -0.630463     -0.528335     -0.528335      0.426206
+     1   0 0 1     -0.378870     -0.008554     -0.008554     -0.361761
+
+     2   2 0 0     -6.285276    -56.858643    -56.858643    107.432009
+     2   1 1 0      2.338621      1.445197      1.445197     -0.551773
+     2   1 0 1      1.389298     -0.131150     -0.131150      1.651599
+     2   0 2 0     -5.281238     -4.035892     -4.035892      2.790546
+     2   0 1 1     -0.436204      0.384155      0.384155     -1.204514
+     2   0 0 2     -4.729265     -4.389442     -4.389442      4.049619
+
+
+ Parallel integral file used       1 records with       0 large values
+
+
+            General Information
+            -------------------
+          SCF calculation type: DFT
+          Wavefunction type:  closed shell.
+          No. of atoms     :     4
+          No. of electrons :    10
+           Alpha electrons :     5
+            Beta electrons :     5
+          Charge           :     0
+          Spin multiplicity:     1
+          Use of symmetry is: off; symmetry adaption is: off
+          Maximum number of iterations: 500
+          AO basis - number of functions:     8
+                     number of shells:     6
+          Convergence on energy requested:  1.00D-06
+          Convergence on density requested:  1.00D-05
+          Convergence on gradient requested:  5.00D-04
+
+              XC Information
+              --------------
+                         PBE0 Method XC Functional
+                     Hartree-Fock (Exact) Exchange  0.250          
+          PerdewBurkeErnzerhof Exchange Functional  0.750          
+            Perdew 1991 LDA Correlation Functional  1.000 local    
+           PerdewBurkeErnz. Correlation Functional  1.000 non-local
+
+             Grid Information
+             ----------------
+          Grid used for XC integration:  medium    
+          Radial quadrature: Mura-Knowles        
+          Angular quadrature: Lebedev. 
+          Tag              B.-S. Rad. Rad. Pts. Rad. Cut. Ang. Pts.
+          ---              ---------- --------- --------- ---------
+          N                   0.65       49           5.0       434
+          H                   0.35       45           6.0       434
+          Grid pruning is: on 
+          Number of quadrature shells:   184
+          Spatial weights used:  Erf1
+
+          Convergence Information
+          -----------------------
+          Convergence aids based upon iterative change in 
+          total energy or number of iterations. 
+          Levelshifting, if invoked, occurs when the 
+          HOMO/LUMO gap drops below (HL_TOL):  1.00D-02
+          DIIS, if invoked, will attempt to extrapolate 
+          using up to (NFOCK): 10 stored Fock matrices.
+
+                    Damping( 0%)  Levelshifting(0.5)       DIIS
+                  --------------- ------------------- ---------------
+          dE  on:    start            ASAP                start   
+          dE off:    2 iters        500 iters           500 iters 
+
+
+      Screening Tolerance Information
+      -------------------------------
+          Density screening/tol_rho:  1.00D-10
+          AO Gaussian exp screening on grid/accAOfunc:  14
+          CD Gaussian exp screening on grid/accCDfunc:  20
+          XC Gaussian exp screening on grid/accXCfunc:  20
+          Schwarz screening/accCoul:  1.00D-08
+
+
+
+                            NWChem DFT Gradient Module
+                            --------------------------
+
+
+                                      nwchem
+
+
+
+  charge          =   0.00
+  wavefunction    = closed shell
+
+
+
+                         DFT ENERGY GRADIENTS
+
+    atom               coordinates                        gradient
+                 x          y          z           x          y          z
+   1 N      -3.300166   0.262100   0.095718    0.000023  -0.000053  -0.000031
+   2 H      -1.320454   0.039000  -0.038375   -0.000025   0.000012   0.000006
+   3 H      -3.837350  -1.517639   0.824390    0.000001   0.000029  -0.000001
+   4 H      -3.837380   0.070142  -1.817799    0.000000   0.000013   0.000026
+
+                 ----------------------------------------
+                 |  Time  |  1-e(secs)   |  2-e(secs)   |
+                 ----------------------------------------
+                 |  CPU   |       0.00   |       0.00   |
+                 ----------------------------------------
+                 |  WALL  |       0.00   |       0.00   |
+                 ----------------------------------------
+
+ Task  times  cpu:        0.7s     wall:        0.9s
+ Summary of allocated global arrays
+-----------------------------------
+  No active global arrays
+
+
+
+                         GA Statistics for process    0
+                         ------------------------------
+
+       create   destroy   get      put      acc     scatter   gather  read&inc
+calls:  124      118     6716      284     3208        0        0      599     
+number of processes/call 0.00e+00 0.00e+00 0.00e+00 0.00e+00 0.00e+00
+bytes total:             3.63e+05 5.25e+04 1.44e+05 0.00e+00 0.00e+00 4.79e+03
+bytes remote:            0.00e+00 0.00e+00 0.00e+00 0.00e+00 0.00e+00 0.00e+00
+Max memory consumed for GA by this process: 19968 bytes
+MA_summarize_allocated_blocks: starting scan ...
+MA_summarize_allocated_blocks: scan completed: 0 heap blocks, 0 stack blocks
+MA usage statistics:
+
+	allocation statistics:
+					      heap	     stack
+					      ----	     -----
+	current number of blocks	         0	         0
+	maximum number of blocks	        23	        53
+	current total bytes		         0	         0
+	maximum total bytes		   4005144	  22510280
+	maximum total K-bytes		      4006	     22511
+	maximum total M-bytes		         5	        23
+
+
+                                NWChem Input Module
+                                -------------------
+
+
+
+
+
+                                     CITATION
+                                     --------
+                Please cite the following reference when publishing
+                           results obtained with NWChem:
+
+          E. Aprà, E. J. Bylaska, W. A. de Jong, N. Govind, K. Kowalski,
+       T. P. Straatsma, M. Valiev, H. J. J. van Dam, Y. Alexeev, J. Anchell,
+       V. Anisimov, F. W. Aquino, R. Atta-Fynn, J. Autschbach, N. P. Bauman,
+     J. C. Becca, D. E. Bernholdt, K. Bhaskaran-Nair, S. Bogatko, P. Borowski,
+        J. Boschen, J. Brabec, A. Bruner, E. Cauët, Y. Chen, G. N. Chuev,
+      C. J. Cramer, J. Daily, M. J. O. Deegan, T. H. Dunning Jr., M. Dupuis,
+   K. G. Dyall, G. I. Fann, S. A. Fischer, A. Fonari, H. Früchtl, L. Gagliardi,
+      J. Garza, N. Gawande, S. Ghosh, K. Glaesemann, A. W. Götz, J. Hammond,
+       V. Helms, E. D. Hermes, K. Hirao, S. Hirata, M. Jacquelin, L. Jensen,
+   B. G. Johnson, H. Jónsson, R. A. Kendall, M. Klemm, R. Kobayashi, V. Konkov,
+      S. Krishnamoorthy, M. Krishnan, Z. Lin, R. D. Lins, R. J. Littlefield,
+      A. J. Logsdail, K. Lopata, W. Ma, A. V. Marenich, J. Martin del Campo,
+   D. Mejia-Rodriguez, J. E. Moore, J. M. Mullin, T. Nakajima, D. R. Nascimento,
+    J. A. Nichols, P. J. Nichols, J. Nieplocha, A. Otero-de-la-Roza, B. Palmer,
+    A. Panyala, T. Pirojsirikul, B. Peng, R. Peverati, J. Pittner, L. Pollack,
+   R. M. Richard, P. Sadayappan, G. C. Schatz, W. A. Shelton, D. W. Silverstein,
+   D. M. A. Smith, T. A. Soares, D. Song, M. Swart, H. L. Taylor, G. S. Thomas,
+            V. Tipparaju, D. G. Truhlar, K. Tsemekhman, T. Van Voorhis,
+     Á. Vázquez-Mayagoitia, P. Verma, O. Villa, A. Vishnu, K. D. Vogiatzis,
+        D. Wang, J. H. Weare, M. J. Williamson, T. L. Windus, K. Woliński,
+        A. T. Wong, Q. Wu, C. Yang, Q. Yu, M. Zacharias, Z. Zhang, Y. Zhao,
+                                and R. J. Harrison
+                        "NWChem: Past, present, and future
+                         J. Chem. Phys. 152, 184102 (2020)
+                               doi:10.1063/5.0004997
+
+                                      AUTHORS
+                                      -------
+     E. Apra, E. J. Bylaska, N. Govind, K. Kowalski, M. Valiev, W. A. de Jong,
+      T. P. Straatsma, H. J. J. van Dam, D. Wang, T. L. Windus, N. P. Bauman,
+       A. Panyala, J. Hammond, J. Autschbach, K. Bhaskaran-Nair, J. Brabec,
+    K. Lopata, S. A. Fischer, S. Krishnamoorthy, M. Jacquelin, W. Ma, M. Klemm,
+       O. Villa, Y. Chen, V. Anisimov, F. Aquino, S. Hirata, M. T. Hackler,
+           Eric Hermes, L. Jensen, J. E. Moore, J. C. Becca, V. Konjkov,
+            D. Mejia-Rodriguez, T. Risthaus, M. Malagoli, A. Marenich,
+   A. Otero-de-la-Roza, J. Mullin, P. Nichols, R. Peverati, J. Pittner, Y. Zhao,
+        P.-D. Fan, A. Fonari, M. J. Williamson, R. J. Harrison, J. R. Rehr,
+      M. Dupuis, D. Silverstein, D. M. A. Smith, J. Nieplocha, V. Tipparaju,
+      M. Krishnan, B. E. Van Kuiken, A. Vazquez-Mayagoitia, M. Swart, Q. Wu,
+   T. Van Voorhis, A. A. Auer, M. Nooijen, L. D. Crosby, E. Brown, G. Cisneros,
+     G. I. Fann, H. Fruchtl, J. Garza, K. Hirao, R. A. Kendall, J. A. Nichols,
+       K. Tsemekhman, K. Wolinski, J. Anchell, D. E. Bernholdt, P. Borowski,
+       T. Clark, D. Clerc, H. Dachsel, M. J. O. Deegan, K. Dyall, D. Elwood,
+      E. Glendening, M. Gutowski, A. C. Hess, J. Jaffe, B. G. Johnson, J. Ju,
+        R. Kobayashi, R. Kutteh, Z. Lin, R. Littlefield, X. Long, B. Meng,
+      T. Nakajima, S. Niu, L. Pollack, M. Rosing, K. Glaesemann, G. Sandrone,
+      M. Stave, H. Taylor, G. Thomas, J. H. van Lenthe, A. T. Wong, Z. Zhang.
+
+ Total times  cpu:        0.8s     wall:        0.9s
