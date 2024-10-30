@@ -1,0 +1,429 @@
+ argument  1 = nwchem.nwi
+                                         
+                                         
+
+
+             Northwest Computational Chemistry Package (NWChem) 7.0.2
+             --------------------------------------------------------
+
+
+                    Environmental Molecular Sciences Laboratory
+                       Pacific Northwest National Laboratory
+                                Richland, WA 99352
+
+                              Copyright (c) 1994-2020
+                       Pacific Northwest National Laboratory
+                            Battelle Memorial Institute
+
+             NWChem is an open-source computational chemistry package
+                        distributed under the terms of the
+                      Educational Community License (ECL) 2.0
+             A copy of the license is included with this distribution
+                              in the LICENSE.TXT file
+
+                                  ACKNOWLEDGMENT
+                                  --------------
+
+            This software and its documentation were developed at the
+            EMSL at Pacific Northwest National Laboratory, a multiprogram
+            national laboratory, operated for the U.S. Department of Energy
+            by Battelle under Contract Number DE-AC05-76RL01830. Support
+            for this work was provided by the Department of Energy Office
+            of Biological and Environmental Research, Office of Basic
+            Energy Sciences, and the Office of Advanced Scientific Computing.
+
+
+           Job information
+           ---------------
+
+    hostname        = DESKTOP-M7D5GNM
+    program         = nwchem
+    date            = Wed Oct 30 15:43:52 2024
+
+    compiled        = Sat_Apr_09_17:12:10_2022
+    source          = /build/nwchem-f1f4gx/nwchem-7.0.2/build-openmpi
+    nwchem branch   = 7.0.2
+    nwchem revision = N/A
+    ga revision     = 5.8.1
+    use scalapack   = T
+    input           = nwchem.nwi
+    prefix          = nwchem.
+    data base       = /home/ruslan/work/Master-s-thesis/hydrogen_fluoride/nwchem/nwchem.db
+    status          = startup
+    nproc           =        1
+    time left       =     -1s
+
+
+
+           Memory information
+           ------------------
+
+    heap     =   13107196 doubles =    100.0 Mbytes
+    stack    =   13107201 doubles =    100.0 Mbytes
+    global   =   26214400 doubles =    200.0 Mbytes (distinct from heap & stack)
+    total    =   52428797 doubles =    400.0 Mbytes
+    verify   = yes
+    hardfail = no 
+
+
+           Directory information
+           ---------------------
+
+  0 permanent = /home/ruslan/work/Master-s-thesis/hydrogen_fluoride/nwchem
+  0 scratch   = /home/ruslan/work/Master-s-thesis/hydrogen_fluoride/nwchem
+
+
+
+
+                                NWChem Input Module
+                                -------------------
+
+
+                                      nwchem
+                                      ------
+
+ Scaling coordinates for geometry "geometry" by  1.889725989
+ (inverse scale =  0.529177249)
+
+
+
+                             Geometry "geometry" -> ""
+                             -------------------------
+
+ Output coordinates in angstroms (scale by  1.889725989 to convert to a.u.)
+
+  No.       Tag          Charge          X              Y              Z
+ ---- ---------------- ---------- -------------- -------------- --------------
+    1 H                    1.0000     0.00000000     0.00000000     0.00000000
+    2 F                    9.0000     0.00000000     0.00000000     1.00000000
+
+      Atomic Mass 
+      ----------- 
+
+      H                  1.007825
+      F                 18.998400
+
+
+ Effective nuclear repulsion energy (a.u.)       4.7625952410
+
+            Nuclear Dipole moment (a.u.) 
+            ----------------------------
+        X                 Y               Z
+ ---------------- ---------------- ----------------
+     0.0000000000     0.0000000000    17.0075338972
+
+
+            XYZ format geometry
+            -------------------
+     2
+ geometry
+ H                     0.00000000     0.00000000     0.00000000
+ F                     0.00000000     0.00000000     1.00000000
+
+
+                                 NWChem DFT Module
+                                 -----------------
+
+
+                                      nwchem
+
+
+
+
+ Summary of "ao basis" -> "ao basis" (cartesian)
+ ------------------------------------------------------------------------------
+       Tag                 Description            Shells   Functions and Types
+ ---------------- ------------------------------  ------  ---------------------
+ H                           sto-3g                  1        1   1s
+ F                           sto-3g                  3        5   2s1p
+
+
+  Caching 1-el integrals 
+
+            General Information
+            -------------------
+          SCF calculation type: DFT
+          Wavefunction type:  closed shell.
+          No. of atoms     :     2
+          No. of electrons :    10
+           Alpha electrons :     5
+            Beta electrons :     5
+          Charge           :     0
+          Spin multiplicity:     1
+          Use of symmetry is: off; symmetry adaption is: off
+          Maximum number of iterations: 500
+          AO basis - number of functions:     6
+                     number of shells:     4
+          Convergence on energy requested:  1.00D-06
+          Convergence on density requested:  1.00D-05
+          Convergence on gradient requested:  5.00D-04
+
+              XC Information
+              --------------
+                         B3LYP Method XC Potential
+                     Hartree-Fock (Exact) Exchange  0.200          
+                        Slater Exchange Functional  0.800 local    
+                    Becke 1988 Exchange Functional  0.720 non-local
+              Lee-Yang-Parr Correlation Functional  0.810          
+                  VWN I RPA Correlation Functional  0.190 local    
+
+             Grid Information
+             ----------------
+          Grid used for XC integration:  medium    
+          Radial quadrature: Mura-Knowles        
+          Angular quadrature: Lebedev. 
+          Tag              B.-S. Rad. Rad. Pts. Rad. Cut. Ang. Pts.
+          ---              ---------- --------- --------- ---------
+          H                   0.35       45           4.0       434
+          F                   0.50       49           5.0       434
+          Grid pruning is: on 
+          Number of quadrature shells:    94
+          Spatial weights used:  Erf1
+
+          Convergence Information
+          -----------------------
+          Convergence aids based upon iterative change in 
+          total energy or number of iterations. 
+          Levelshifting, if invoked, occurs when the 
+          HOMO/LUMO gap drops below (HL_TOL):  1.00D-02
+          DIIS, if invoked, will attempt to extrapolate 
+          using up to (NFOCK): 10 stored Fock matrices.
+
+                    Damping( 0%)  Levelshifting(0.5)       DIIS
+                  --------------- ------------------- ---------------
+          dE  on:    start            ASAP                start   
+          dE off:    2 iters        500 iters           500 iters 
+
+
+      Screening Tolerance Information
+      -------------------------------
+          Density screening/tol_rho:  1.00D-10
+          AO Gaussian exp screening on grid/accAOfunc:  14
+          CD Gaussian exp screening on grid/accCDfunc:  20
+          XC Gaussian exp screening on grid/accXCfunc:  20
+          Schwarz screening/accCoul:  1.00D-08
+
+
+      Superposition of Atomic Density Guess
+      -------------------------------------
+
+ Sum of atomic energies:         -98.46802305
+
+      Non-variational initial energy
+      ------------------------------
+
+ Total energy =     -98.249507
+ 1-e energy   =    -148.480353
+ 2-e energy   =      45.468250
+ HOMO         =      -0.394866
+ LUMO         =       0.400816
+
+   Time after variat. SCF:      0.1
+   Time prior to 1st pass:      0.1
+
+ #quartets = 5.500D+01 #integrals = 9.700D+01 #direct =  0.0% #cached =100.0%
+
+
+ Integral file          = /home/ruslan/work/Master-s-thesis/hydrogen_fluoride/nwchem/nwchem.aoints.0
+ Record size in doubles =    65536    No. of integs per rec  =    43688
+ Max. records in memory =        2    Max. records in file   =  1852571
+ No. of bits per label  =        8    No. of bits per value  =       64
+
+
+ Grid_pts file          = /home/ruslan/work/Master-s-thesis/hydrogen_fluoride/nwchem/nwchem.gridpts.0
+ Record size in doubles =  12289        No. of grid_pts per rec  =   3070
+ Max. records in memory =     16        Max. recs in file   =   9879581
+
+
+           Memory utilization after 1st SCF pass: 
+           Heap Space remaining (MW):       12.78            12778724
+          Stack Space remaining (MW):       13.11            13107036
+
+   convergence    iter        energy       DeltaE   RMS-Dens  Diis-err    time
+ ---------------- ----- ----------------- --------- --------- ---------  ------
+ d= 0,ls=0.0,diis     1    -98.8660022346 -1.04D+02  1.71D-01  2.47D-01     0.2
+ d= 0,ls=0.0,diis     2    -98.9003687338 -3.44D-02  6.75D-02  1.22D-01     0.2
+ d= 0,ls=0.0,diis     3    -98.9262180208 -2.58D-02  9.86D-04  2.08D-05     0.2
+ d= 0,ls=0.0,diis     4    -98.9262227559 -4.74D-06  1.51D-05  6.44D-09     0.2
+ d= 0,ls=0.0,diis     5    -98.9262227568 -9.34D-10  6.95D-07  1.04D-11     0.2
+
+
+         Total DFT energy =      -98.926222756801
+      One electron energy =     -148.932928945679
+           Coulomb energy =       56.196878901017
+    Exchange-Corr. energy =      -10.952767953136
+ Nuclear repulsion energy =        4.762595240997
+
+ Numeric. integr. density =        9.999999943608
+
+     Total iterative time =      0.1s
+
+
+
+                       DFT Final Molecular Orbital Analysis
+                       ------------------------------------
+
+ Vector    1  Occ=2.000000D+00  E=-2.431167D+01
+              MO Center=  7.9D-11, -8.7D-11,  1.0D+00, r^2= 1.2D-02
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     2      0.994320  2 F  s          
+
+ Vector    2  Occ=2.000000D+00  E=-1.039392D+00
+              MO Center= -5.5D-09,  6.0D-09,  8.5D-01, r^2= 3.9D-01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     3      0.930054  2 F  s                  2     -0.248159  2 F  s          
+     1      0.174441  1 H  s                  6     -0.121017  2 F  pz         
+
+ Vector    3  Occ=2.000000D+00  E=-3.585380D-01
+              MO Center= -1.9D-09,  2.1D-09,  7.7D-01, r^2= 6.8D-01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     6      0.679074  2 F  pz                 1     -0.545597  1 H  s          
+     3      0.456955  2 F  s                  2     -0.093052  2 F  s          
+
+ Vector    4  Occ=2.000000D+00  E=-1.753602D-01
+              MO Center=  7.2D-09, -7.9D-09,  1.0D+00, r^2= 3.2D-01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     5      0.740221  2 F  py                 4     -0.672363  2 F  px         
+
+ Vector    5  Occ=2.000000D+00  E=-1.753602D-01
+              MO Center= -1.6D-11, -1.5D-11,  1.0D+00, r^2= 3.2D-01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     4      0.740221  2 F  px                 5      0.672363  2 F  py         
+
+ Vector    6  Occ=0.000000D+00  E= 2.985276D-01
+              MO Center=  9.8D-11, -1.1D-10,  3.1D-01, r^2= 7.5D-01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     1      1.012754  1 H  s                  6      0.813963  2 F  pz         
+     3     -0.460126  2 F  s                  2      0.073993  2 F  s          
+
+
+ center of mass
+ --------------
+ x =   0.00000000 y =   0.00000000 z =   1.79452996
+
+ moments of inertia (a.u.)
+ ------------------
+           3.417705814082           0.000000000000           0.000000000000
+           0.000000000000           3.417705814082           0.000000000000
+           0.000000000000           0.000000000000           0.000000000000
+
+     Multipole analysis of the density
+     ---------------------------------
+
+     L   x y z        total         alpha         beta         nuclear
+     -   - - -        -----         -----         ----         -------
+     0   0 0 0     -0.000000     -5.000000     -5.000000     10.000000
+
+     1   1 0 0      0.000000      0.000000      0.000000      0.000000
+     1   0 1 0     -0.000000     -0.000000     -0.000000      0.000000
+     1   0 0 1     -0.437889     -8.722711     -8.722711     17.007534
+
+     2   2 0 0     -3.468313     -1.734156     -1.734156      0.000000
+     2   1 1 0     -0.000000     -0.000000     -0.000000      0.000000
+     2   1 0 1     -0.000000     -0.000000     -0.000000      0.000000
+     2   0 2 0     -3.468313     -1.734156     -1.734156      0.000000
+     2   0 1 1      0.000000      0.000000      0.000000      0.000000
+     2   0 0 2     -4.089649    -18.114614    -18.114614     32.139579
+
+
+ Parallel integral file used       1 records with       0 large values
+
+
+ Task  times  cpu:        0.1s     wall:        0.2s
+ Summary of allocated global arrays
+-----------------------------------
+  No active global arrays
+
+
+
+                         GA Statistics for process    0
+                         ------------------------------
+
+       create   destroy   get      put      acc     scatter   gather  read&inc
+calls:  106      100     1282      195      765        0        0      172     
+number of processes/call 0.00e+00 0.00e+00 0.00e+00 0.00e+00 0.00e+00
+bytes total:             1.33e+05 2.80e+04 6.57e+04 0.00e+00 0.00e+00 1.38e+03
+bytes remote:            0.00e+00 0.00e+00 0.00e+00 0.00e+00 0.00e+00 0.00e+00
+Max memory consumed for GA by this process: 11232 bytes
+MA_summarize_allocated_blocks: starting scan ...
+MA_summarize_allocated_blocks: scan completed: 0 heap blocks, 0 stack blocks
+MA usage statistics:
+
+	allocation statistics:
+					      heap	     stack
+					      ----	     -----
+	current number of blocks	         0	         0
+	maximum number of blocks	        21	        53
+	current total bytes		         0	         0
+	maximum total bytes		   2627632	  22509928
+	maximum total K-bytes		      2628	     22510
+	maximum total M-bytes		         3	        23
+
+
+                                NWChem Input Module
+                                -------------------
+
+
+
+
+
+                                     CITATION
+                                     --------
+                Please cite the following reference when publishing
+                           results obtained with NWChem:
+
+          E. Aprà, E. J. Bylaska, W. A. de Jong, N. Govind, K. Kowalski,
+       T. P. Straatsma, M. Valiev, H. J. J. van Dam, Y. Alexeev, J. Anchell,
+       V. Anisimov, F. W. Aquino, R. Atta-Fynn, J. Autschbach, N. P. Bauman,
+     J. C. Becca, D. E. Bernholdt, K. Bhaskaran-Nair, S. Bogatko, P. Borowski,
+        J. Boschen, J. Brabec, A. Bruner, E. Cauët, Y. Chen, G. N. Chuev,
+      C. J. Cramer, J. Daily, M. J. O. Deegan, T. H. Dunning Jr., M. Dupuis,
+   K. G. Dyall, G. I. Fann, S. A. Fischer, A. Fonari, H. Früchtl, L. Gagliardi,
+      J. Garza, N. Gawande, S. Ghosh, K. Glaesemann, A. W. Götz, J. Hammond,
+       V. Helms, E. D. Hermes, K. Hirao, S. Hirata, M. Jacquelin, L. Jensen,
+   B. G. Johnson, H. Jónsson, R. A. Kendall, M. Klemm, R. Kobayashi, V. Konkov,
+      S. Krishnamoorthy, M. Krishnan, Z. Lin, R. D. Lins, R. J. Littlefield,
+      A. J. Logsdail, K. Lopata, W. Ma, A. V. Marenich, J. Martin del Campo,
+   D. Mejia-Rodriguez, J. E. Moore, J. M. Mullin, T. Nakajima, D. R. Nascimento,
+    J. A. Nichols, P. J. Nichols, J. Nieplocha, A. Otero-de-la-Roza, B. Palmer,
+    A. Panyala, T. Pirojsirikul, B. Peng, R. Peverati, J. Pittner, L. Pollack,
+   R. M. Richard, P. Sadayappan, G. C. Schatz, W. A. Shelton, D. W. Silverstein,
+   D. M. A. Smith, T. A. Soares, D. Song, M. Swart, H. L. Taylor, G. S. Thomas,
+            V. Tipparaju, D. G. Truhlar, K. Tsemekhman, T. Van Voorhis,
+     Á. Vázquez-Mayagoitia, P. Verma, O. Villa, A. Vishnu, K. D. Vogiatzis,
+        D. Wang, J. H. Weare, M. J. Williamson, T. L. Windus, K. Woliński,
+        A. T. Wong, Q. Wu, C. Yang, Q. Yu, M. Zacharias, Z. Zhang, Y. Zhao,
+                                and R. J. Harrison
+                        "NWChem: Past, present, and future
+                         J. Chem. Phys. 152, 184102 (2020)
+                               doi:10.1063/5.0004997
+
+                                      AUTHORS
+                                      -------
+     E. Apra, E. J. Bylaska, N. Govind, K. Kowalski, M. Valiev, W. A. de Jong,
+      T. P. Straatsma, H. J. J. van Dam, D. Wang, T. L. Windus, N. P. Bauman,
+       A. Panyala, J. Hammond, J. Autschbach, K. Bhaskaran-Nair, J. Brabec,
+    K. Lopata, S. A. Fischer, S. Krishnamoorthy, M. Jacquelin, W. Ma, M. Klemm,
+       O. Villa, Y. Chen, V. Anisimov, F. Aquino, S. Hirata, M. T. Hackler,
+           Eric Hermes, L. Jensen, J. E. Moore, J. C. Becca, V. Konjkov,
+            D. Mejia-Rodriguez, T. Risthaus, M. Malagoli, A. Marenich,
+   A. Otero-de-la-Roza, J. Mullin, P. Nichols, R. Peverati, J. Pittner, Y. Zhao,
+        P.-D. Fan, A. Fonari, M. J. Williamson, R. J. Harrison, J. R. Rehr,
+      M. Dupuis, D. Silverstein, D. M. A. Smith, J. Nieplocha, V. Tipparaju,
+      M. Krishnan, B. E. Van Kuiken, A. Vazquez-Mayagoitia, M. Swart, Q. Wu,
+   T. Van Voorhis, A. A. Auer, M. Nooijen, L. D. Crosby, E. Brown, G. Cisneros,
+     G. I. Fann, H. Fruchtl, J. Garza, K. Hirao, R. A. Kendall, J. A. Nichols,
+       K. Tsemekhman, K. Wolinski, J. Anchell, D. E. Bernholdt, P. Borowski,
+       T. Clark, D. Clerc, H. Dachsel, M. J. O. Deegan, K. Dyall, D. Elwood,
+      E. Glendening, M. Gutowski, A. C. Hess, J. Jaffe, B. G. Johnson, J. Ju,
+        R. Kobayashi, R. Kutteh, Z. Lin, R. Littlefield, X. Long, B. Meng,
+      T. Nakajima, S. Niu, L. Pollack, M. Rosing, K. Glaesemann, G. Sandrone,
+      M. Stave, H. Taylor, G. Thomas, J. H. van Lenthe, A. T. Wong, Z. Zhang.
+
+ Total times  cpu:        0.1s     wall:        0.2s

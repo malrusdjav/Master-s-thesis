@@ -1,0 +1,27 @@
+title "nwchem"
+
+permanent_dir /home/ruslan/work/Master-s-thesis/hydrogen_fluoride/nwchem
+
+scratch_dir /home/ruslan/work/Master-s-thesis/hydrogen_fluoride/nwchem
+
+start nwchem
+
+geometry units angstrom nocenter noautosym noautoz
+  H  0.0000000000000000e+00 0.0000000000000000e+00 0.0000000000000000e+00
+  F  0.0000000000000000e+00 0.0000000000000000e+00 1.0000000000000000e+00
+end
+
+basis noprint
+   * library sto-3g
+end
+
+dft
+  iterations 500
+  xc b3lyp
+  mult 1
+end
+
+
+
+task dft energy
+

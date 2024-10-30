@@ -4,6 +4,9 @@ from ase.calculators.nwchem import NWChem
 import ase.io
 from ase.visualize import view
 from ase.io import write
+import ase.calculators.castep
+import ase.io.castep
+from ase.calculators.gaussian import Gaussian
 
 d = 1.0
 hf = Atoms('HF',
@@ -16,6 +19,6 @@ hf.calc = NWChem(dft=dict(iterations=500,xc='b3lyp'), basis='sto-3g')
 
 for i in range(len(hf)): #distances for each atom in the molecule
         print(f"charge {i} : {hf.get_charges()[i]}")
-
+print(hf.get_potential_energy())
 print(hf.get_positions())
-
+print(hf.get_charges())
