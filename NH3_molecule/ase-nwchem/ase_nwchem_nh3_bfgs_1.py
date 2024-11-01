@@ -3,7 +3,7 @@ from ase.optimize import BFGS
 from ase.calculators.nwchem import NWChem
 import ase.io
 from ase.visualize import view
-from ase.io import write
+from ase.io import read, write
 from tabulate import tabulate
 import statistics
 from pytablewriter import UnicodeTableWriter
@@ -16,7 +16,7 @@ print(nh3coor[0])
 print(nh3coor[0].symbols)
 
 
-f_opt = open('opt.txt', 'w')
+f_opt = open('opt.rst', 'w')
 f_opt.write("initial NH3 positions : " + '\n')
 f_opt.write(str(nh3coor[0].positions) + '\n\n\n')
 #print("initial NH3 positions : \n ", nh3coor[0].positions)
@@ -28,7 +28,7 @@ bs = ['sto-2g', 'sto-3g', 'sto-6g']
 exc_corr = ['b3lyp', 'pbe0', 'hse03'] # exchange correlation functionals
 #exc_corr = ['b3lyp', 'pbe0']
 
-file = open('res.txt', 'w')
+file = open('res.rst', 'w')
 
 data = []
 exp_data = ['experiment', None, round(1.0124, 4), None, round(106.670, 3)]
@@ -50,20 +50,25 @@ for i in range(len(exc_corr)):
 		
 		ang_3 = [nh3.get_angle(1, 0, 3), nh3.get_angle(1, 0, 2), nh3.get_angle(2, 0, 3)]	
 		ang3_av = round(statistics.mean(ang_3), 3)
-		ang_var = round(statistics.variance(ang_3), 9)		
+		
+		ang_var = "{:.9e}".format(statistics.variance(ang_3))
+		#ang_var = "{:e}".format(round(statistics.variance(ang_3), 9))		
  		
 		#angles_int = [round(ang, 5) for ang in ang_3] 	
 		#angles ='\n'.join(map(str, angles_int))
 
 		dist_3 = [ nh3.get_distance(0, 1),  nh3.get_distance(0, 2),  nh3.get_distance(0, 3)]	
 		dist_av = round(statistics.mean(dist_3), 4)		
-		dist_var = round(statistics.variance(dist_3), 12)
+		
+		dist_var = "{:.12e}".format(statistics.variance(dist_3))
+		#dist_var = "{:e}".format(round(statistics.variance(dist_3), 12))
 		
 		# relative error (combined)
 		re = round(abs(((dist_av - exp_data[2])/exp_data[2] + (ang3_av - exp_data[4])/exp_data[4]))*100, 3)  
 		errors[re] = [exc_corr[i], bs[j]]		
 
 		data.append([exc_corr[i], bs[j], dist_av, dist_var, ang3_av, ang_var, re])	
+		#XYZ = read(nh3coor).write("test.xyz")
 		print(f'Computation with XC: {exc_corr[i].upper()} and BS: {bs[j]} is successfully completed!\n')
 
 data.append(exp_data)
@@ -100,11 +105,11 @@ def printer(data, headers):
 	value_matrix=data
     )
     
-    file = open('output.txt', 'w')
+    file = open('output.rst', 'w')
     file.write(writer.dumps())
 
-    #file.write(f'\n\nThe minimum relative error is equal to {min_error}')
-    #file.write(f'\nIt is achieved with the following combination of XC and BS {min_set}\n')
+    file.write(f'\n\nThe minimum relative error is equal to {min_error}')
+    file.write(f'\nIt is achieved with the following combination of XC and BS {min_set}\n')
     file.close()
 
 printer(data, headers)
