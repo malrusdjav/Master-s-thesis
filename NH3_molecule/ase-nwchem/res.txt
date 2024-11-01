@@ -1,9 +1,12 @@
-XC          BS        Mean dist     Dist var    Mean angle    Angle var        RE
-----------  ------  -----------  -----------  ------------  -----------  --------
-b3lyp       sto-2g      1.07308  5.2543e-11        98.7635  1.32807e-07  1.41876
-b3lyp       sto-3g      1.06229  1.71605e-11      100.982   7.026e-09    0.404746
-pbe0        sto-2g      1.06804  1.30945e-12       98.77    2.1564e-08   1.91044
-pbe0        sto-3g      1.05663  1.55887e-12      101.049   4.28611e-09  0.900177
-experiment  1.0124    106.67
-The minimum relative error is equal to 0.40474624382259505
-It is achieved with the following combination of XC and BS b3lyp + sto-3g
+XC          BS        Mean dist    Dist var    Mean angle    Angle var     RE
+----------  ------  -----------  ----------  ------------  -----------  -----
+b3lyp       sto-2g       1.0731    5.3e-11         98.764     1.33e-07  1.416
+b3lyp       sto-3g       1.0623    1.7e-11        100.982     7e-09     0.403
+b3lyp       sto-6g       1.0586    5e-12          101.152     2.2e-08   0.61
+pbe0        sto-2g       1.068     9e-12           98.776     3e-09     1.908
+pbe0        sto-3g       1.0563    3.3e-11        101.06      3e-09     0.923
+pbe0        sto-6g       1.0525    1e-11          101.268     7e-09     1.103
+hse03       sto-2g       1.0719    5.88e-10        98.322     4.68e-07  1.949
+hse03       sto-3g       1.0611    1.1e-11        100.451     3.1e-08   1.02
+hse03       sto-6g       1.057     1.1e-11        100.667     9e-09     1.222
+experiment               1.0124                   106.67
