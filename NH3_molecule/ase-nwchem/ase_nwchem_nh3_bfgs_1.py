@@ -14,7 +14,7 @@ nh3coor = ase.io.read(filename='./avogadro/nh3_uff.xyz', format='xyz',index=":")
 print(nh3coor)
 print(nh3coor[0])
 print(nh3coor[0].symbols)
-
+images = []
 
 f_opt = open('opt.rst', 'w')
 f_opt.write("initial NH3 positions : " + '\n')
@@ -23,10 +23,10 @@ f_opt.write(str(nh3coor[0].positions) + '\n\n\n')
 
 nh3 = Atoms('NH3',positions=nh3coor[0].positions)
 
-bs = ['sto-2g', 'sto-3g', 'sto-6g']
-#bs = ['sto-2g', 'sto-3g']
-exc_corr = ['b3lyp', 'pbe0', 'hse03'] # exchange correlation functionals
-#exc_corr = ['b3lyp', 'pbe0']
+#bs = ['sto-2g', 'sto-3g', 'sto-6g']
+bs = ['sto-2g', 'sto-3g']
+#exc_corr = ['b3lyp', 'pbe0', 'hse03'] # exchange correlation functionals
+exc_corr = ['b3lyp', 'pbe0']
 
 file = open('res.rst', 'w')
 
@@ -68,8 +68,16 @@ for i in range(len(exc_corr)):
 		errors[re] = [exc_corr[i], bs[j]]		
 
 		data.append([exc_corr[i], bs[j], dist_av, dist_var, ang3_av, ang_var, re])	
-		#XYZ = read(nh3coor).write("test.xyz")
+            
 		print(f'Computation with XC: {exc_corr[i].upper()} and BS: {bs[j]} is successfully completed!\n')
+                
+                # create the file name for the computed geometry with given xc and basis set
+		filename='-'.join(('NH3geometry', exc_corr[i], bs[j]))
+		ext = 'xyz' #extension
+		#print(type(exc_corr[i]), type(bs[j]), filename)
+		output = '.'.join((filename, ext)) 
+		ase.io.write(output, images=nh3,format="xyz")
+		print('geometry written to file ', filename)
 
 data.append(exp_data)
 
