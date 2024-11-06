@@ -7,6 +7,14 @@ from ase.io import write
 import ase.io.castep
 import matplotlib.pyplot as plt
 
+===============================
+TESTING BRANCH!
+
+'''Here I am trying to add different 
+basis sets + and functionals and then
+I am going to visualize on the same 
+plot '''
+===============================
 eps = 0.5
 r_min = eps
 r_max = 2.0
