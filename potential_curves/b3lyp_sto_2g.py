@@ -6,7 +6,9 @@ from ase.visualize import view
 from ase.io import write
 import ase.io.castep
 import matplotlib.pyplot as plt
-
+===============================
+TESTING BRANCH!
+===============================
 eps = 0.5
 r_min = eps
 r_max = 2.0
