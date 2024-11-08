@@ -7,18 +7,17 @@ scratch_dir /home/ruslan/work/Master-s-thesis/potential_curves/nwchem
 start nwchem
 
 geometry units angstrom nocenter noautosym noautoz
-  H  0.0000000000000000e+00 0.0000000000000000e+00 0.0000000000000000e+00
-  F  0.0000000000000000e+00 0.0000000000000000e+00 1.8499999999999996e+00
+  F  0.0000000000000000e+00 0.0000000000000000e+00 0.0000000000000000e+00
 end
 
 basis noprint
-   * library sto-3g
+   * library sto-6g
 end
 
 dft
   iterations 500
-  xc b3lyp
-  mult 1
+  xc pbe0
+  mult 2
 end
 
 

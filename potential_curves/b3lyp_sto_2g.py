@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 
 '''Here I am trying to add different
 basis sets + and functionals and then
-I am going to visualize on the same
+I am going to visualize the data on the same
 plot '''
 
 eps = 0.5
@@ -17,31 +17,29 @@ r_min = eps
 r_max = 2.0
 n = 10 
 dr = (r_max - r_min)/n
-
 r_curr = r_min
 
-E_H, E_F = 0.2, 1 # the energies of individual atoms
+E_H, E_F = 0.2, 1 # the energies of individual atoms (physical constants)
 E = [] # bound HF molecular energy (contains a list of such energies for different xc functionals)
 curr_energy_spectrum = []
 dE = [] # energy difference (contains a list of such differences for different xc functionals)
-dist = []
-d = []
-exc_corr = ['b3lyp', 'pbe0']
+d = [] # distance 
+exc_corr = ['b3lyp', 'pbe0'] # exchange correlation functionals
+bs = ['sto-2g', 'sto-3g'] # basis sets
+
+b3lyp = dict()
+pbe0 = dict()
+hse03 = dict()
 
 for i in range(n):
 	d.append(r_curr)
 	r_curr+=dr
 
 for i in range(len(exc_corr)):
-	#hf = Atoms('HF', positions=[[0, 0, 0], [0, 0, d[i]]])
-	#hf.calc = NWChem(dft=dict(iterations=500,xc=exc_corr[i]), basis='sto-3g')
 	for j in range(n):
 		hf = Atoms('HF', positions=[[0, 0, 0], [0, 0, d[j]]])
 		hf.calc = NWChem(dft=dict(iterations=500,xc=exc_corr[i]), basis='sto-3g')	
 		curr_energy_spectrum.append(hf.get_potential_energy())
-		#curr_energy_spectrum.append(j)
-		#dist.append(r_curr)
-		#r_curr+=dr
 	E.append(curr_energy_spectrum)
 	curr_energy_spectrum = []
 	

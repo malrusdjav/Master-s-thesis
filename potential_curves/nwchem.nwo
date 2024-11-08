@@ -38,7 +38,7 @@
 
     hostname        = DESKTOP-M7D5GNM
     program         = nwchem
-    date            = Wed Nov  6 16:20:17 2024
+    date            = Fri Nov  8 14:45:15 2024
 
     compiled        = Sat_Apr_09_17:12:10_2022
     source          = /build/nwchem-f1f4gx/nwchem-7.0.2/build-openmpi
@@ -58,10 +58,10 @@
            Memory information
            ------------------
 
-    heap     =   13107194 doubles =    100.0 Mbytes
-    stack    =   13107199 doubles =    100.0 Mbytes
+    heap     =   13107196 doubles =    100.0 Mbytes
+    stack    =   13107201 doubles =    100.0 Mbytes
     global   =   26214400 doubles =    200.0 Mbytes (distinct from heap & stack)
-    total    =   52428793 doubles =    400.0 Mbytes
+    total    =   52428797 doubles =    400.0 Mbytes
     verify   = yes
     hardfail = no 
 
@@ -94,31 +94,28 @@
 
   No.       Tag          Charge          X              Y              Z
  ---- ---------------- ---------- -------------- -------------- --------------
-    1 H                    1.0000     0.00000000     0.00000000     0.00000000
-    2 F                    9.0000     0.00000000     0.00000000     1.85000000
+    1 F                    9.0000     0.00000000     0.00000000     0.00000000
 
       Atomic Mass 
       ----------- 
 
-      H                  1.007825
       F                 18.998400
 
 
- Effective nuclear repulsion energy (a.u.)       2.5743758059
+ Effective nuclear repulsion energy (a.u.)       0.0000000000
 
             Nuclear Dipole moment (a.u.) 
             ----------------------------
         X                 Y               Z
  ---------------- ---------------- ----------------
-     0.0000000000     0.0000000000    31.4639377099
+     0.0000000000     0.0000000000     0.0000000000
 
 
             XYZ format geometry
             -------------------
-     2
+     1
  geometry
- H                     0.00000000     0.00000000     0.00000000
- F                     0.00000000     0.00000000     1.85000000
+ F                     0.00000000     0.00000000     0.00000000
 
 
                                  NWChem DFT Module
@@ -134,8 +131,7 @@
  ------------------------------------------------------------------------------
        Tag                 Description            Shells   Functions and Types
  ---------------- ------------------------------  ------  ---------------------
- H                           sto-3g                  1        1   1s
- F                           sto-3g                  3        5   2s1p
+ F                           sto-6g                  3        5   2s1p
 
 
   Caching 1-el integrals 
@@ -143,29 +139,28 @@
             General Information
             -------------------
           SCF calculation type: DFT
-          Wavefunction type:  closed shell.
-          No. of atoms     :     2
-          No. of electrons :    10
+          Wavefunction type:  spin polarized.
+          No. of atoms     :     1
+          No. of electrons :     9
            Alpha electrons :     5
-            Beta electrons :     5
+            Beta electrons :     4
           Charge           :     0
-          Spin multiplicity:     1
+          Spin multiplicity:     2
           Use of symmetry is: off; symmetry adaption is: off
           Maximum number of iterations: 500
-          AO basis - number of functions:     6
-                     number of shells:     4
+          AO basis - number of functions:     5
+                     number of shells:     3
           Convergence on energy requested:  1.00D-06
           Convergence on density requested:  1.00D-05
           Convergence on gradient requested:  5.00D-04
 
               XC Information
               --------------
-                         B3LYP Method XC Potential
-                     Hartree-Fock (Exact) Exchange  0.200          
-                        Slater Exchange Functional  0.800 local    
-                    Becke 1988 Exchange Functional  0.720 non-local
-              Lee-Yang-Parr Correlation Functional  0.810          
-                  VWN I RPA Correlation Functional  0.190 local    
+                         PBE0 Method XC Functional
+                     Hartree-Fock (Exact) Exchange  0.250          
+          PerdewBurkeErnzerhof Exchange Functional  0.750          
+            Perdew 1991 LDA Correlation Functional  1.000 local    
+           PerdewBurkeErnz. Correlation Functional  1.000 non-local
 
              Grid Information
              ----------------
@@ -174,10 +169,9 @@
           Angular quadrature: Lebedev. 
           Tag              B.-S. Rad. Rad. Pts. Rad. Cut. Ang. Pts.
           ---              ---------- --------- --------- ---------
-          H                   0.35       45           5.0       434
-          F                   0.50       49           6.0       434
+          F                   0.50       49           3.0       434
           Grid pruning is: on 
-          Number of quadrature shells:    94
+          Number of quadrature shells:    49
           Spatial weights used:  Erf1
 
           Convergence Information
@@ -207,142 +201,144 @@
       Superposition of Atomic Density Guess
       -------------------------------------
 
- Sum of atomic energies:         -98.46802305
+ Sum of atomic energies:         -98.92819450
 
       Non-variational initial energy
       ------------------------------
 
- Total energy =     -97.901914
- 1-e energy   =    -144.265763
- 2-e energy   =      43.789473
- HOMO         =      -0.369134
- LUMO         =      -0.039816
+ Total energy =     -98.542209
+ 1-e energy   =    -139.704302
+ 2-e energy   =      41.162093
+ HOMO         =      -0.382128
 
    Time after variat. SCF:      0.0
    Time prior to 1st pass:      0.0
 
- #quartets = 5.500D+01 #integrals = 9.700D+01 #direct =  0.0% #cached =100.0%
+ #quartets = 2.100D+01 #integrals = 4.500D+01 #direct =  0.0% #cached =100.0%
 
 
  Integral file          = /home/ruslan/work/Master-s-thesis/potential_curves/nwchem/nwchem.aoints.0
  Record size in doubles =    65536    No. of integs per rec  =    43688
- Max. records in memory =        2    Max. records in file   =  1852565
+ Max. records in memory =        2    Max. records in file   =  1852546
  No. of bits per label  =        8    No. of bits per value  =       64
 
 
  Grid_pts file          = /home/ruslan/work/Master-s-thesis/potential_curves/nwchem/nwchem.gridpts.0
  Record size in doubles =  12289        No. of grid_pts per rec  =   3070
- Max. records in memory =     16        Max. recs in file   =   9879551
+ Max. records in memory =      9        Max. recs in file   =   9879449
 
 
            Memory utilization after 1st SCF pass: 
-           Heap Space remaining (MW):       12.78            12778722
+           Heap Space remaining (MW):       12.86            12864644
           Stack Space remaining (MW):       13.11            13107036
 
    convergence    iter        energy       DeltaE   RMS-Dens  Diis-err    time
  ---------------- ----- ----------------- --------- --------- ---------  ------
- d= 0,ls=0.0,diis     1    -98.3973708737 -1.01D+02  4.39D-01  4.47D-01     0.1
- d= 0,ls=0.0,diis     2    -98.1503374200  2.47D-01  4.19D-01  3.63D-01     0.1
- d= 0,ls=0.0,diis     3    -98.4912546392 -3.41D-01  7.07D-02  4.95D-01     0.1
- d= 0,ls=0.0,diis     4    -98.3500042464  1.41D-01  3.58D-02  3.80D-01     0.1
- d= 0,ls=0.0,diis     5    -98.4189709615 -6.90D-02  2.40D-01  4.69D-01     0.1
- d= 0,ls=0.0,diis     6    -98.7275226398 -3.09D-01  1.33D-02  3.56D-02     0.2
-  Resetting Diis
- d= 0,ls=0.0,diis     7    -98.7333572985 -5.83D-03  1.50D-02  1.15D-02     0.2
- d= 0,ls=0.0,diis     8    -98.7360818202 -2.72D-03  1.34D-02  2.37D-04     0.2
- d= 0,ls=0.0,diis     9    -98.7350803407  1.00D-03  1.09D-02  4.34D-03     0.2
- d= 0,ls=0.0,diis    10    -98.7361391275 -1.06D-03  2.11D-05  1.96D-08     0.2
- d= 0,ls=0.0,diis    11    -98.7361391322 -4.72D-09  2.00D-06  1.41D-10     0.2
+ d= 0,ls=0.0,diis     1    -99.1343604995 -9.91D+01  2.52D-16  3.32D-28     0.1
+                                                     2.29D-14  1.97D-25
+  Singularity in Pulay matrix. Error and Fock matrices removed. 
+ d= 0,ls=0.5,diis     2    -99.1343604995 -5.68D-14  3.61D-16  1.95D-28     0.1
+                                                     1.00D-15  4.67D-28
 
 
-         Total DFT energy =      -98.736139132230
-      One electron energy =     -144.503520185364
-           Coulomb energy =       54.000437462972
-    Exchange-Corr. energy =      -10.807432215782
- Nuclear repulsion energy =        2.574375805944
+         Total DFT energy =      -99.134360679131
+      One electron energy =     -139.704301664643
+           Coulomb energy =       51.093279807022
+    Exchange-Corr. energy =      -10.523338821510
+ Nuclear repulsion energy =        0.000000000000
 
- Numeric. integr. density =        9.999999844118
+ Numeric. integr. density =        8.999999984396
 
-     Total iterative time =      0.2s
+     Total iterative time =      0.1s
 
 
 
-                       DFT Final Molecular Orbital Analysis
-                       ------------------------------------
+                    DFT Final Alpha Molecular Orbital Analysis
+                    ------------------------------------------
 
- Vector    1  Occ=2.000000D+00  E=-2.433681D+01
-              MO Center= -8.7D-14,  9.2D-14,  1.8D+00, r^2= 1.2D-02
+ Vector    1  Occ=1.000000D+00  E=-2.477488D+01
+              MO Center= -7.3D-16, -7.2D-16, -7.4D-16, r^2= 1.1D-02
    Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
   ----- ------------  ---------------      ----- ------------  ---------------
-     2      0.994653  2 F  s          
+     1      0.996856  1 F  s          
 
- Vector    2  Occ=2.000000D+00  E=-9.885518D-01
-              MO Center= -7.6D-11,  8.1D-11,  1.8D+00, r^2= 3.5D-01
+ Vector    2  Occ=1.000000D+00  E=-1.099995D+00
+              MO Center=  5.2D-14,  5.2D-14,  3.8D-14, r^2= 3.4D-01
    Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
   ----- ------------  ---------------      ----- ------------  ---------------
-     3      1.024851  2 F  s                  2     -0.264955  2 F  s          
-     1      0.041149  1 H  s          
+     2      1.028086  1 F  s                  1     -0.251819  1 F  s          
 
- Vector    3  Occ=2.000000D+00  E=-2.392154D-01
-              MO Center= -1.2D-11,  1.3D-11,  1.0D+00, r^2= 1.3D+00
+ Vector    3  Occ=1.000000D+00  E=-3.546550D-01
+              MO Center=  1.3D-29, -2.4D-29, -3.7D-14, r^2= 3.2D-01
    Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
   ----- ------------  ---------------      ----- ------------  ---------------
-     6     -0.694016  2 F  pz                 1      0.667206  1 H  s          
-     3     -0.098465  2 F  s          
+     5      1.000000  1 F  pz         
 
- Vector    4  Occ=2.000000D+00  E=-1.823448D-01
-              MO Center=  1.0D-10, -4.7D-13,  1.8D+00, r^2= 3.2D-01
+ Vector    4  Occ=1.000000D+00  E=-2.474630D-01
+              MO Center= -5.2D-14, -4.8D-16, -7.2D-30, r^2= 3.2D-01
    Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
   ----- ------------  ---------------      ----- ------------  ---------------
-     4      0.999989  2 F  px         
+     3      0.999958  1 F  px         
 
- Vector    5  Occ=2.000000D+00  E=-1.823448D-01
-              MO Center= -5.0D-13, -1.1D-10,  1.8D+00, r^2= 3.2D-01
+ Vector    5  Occ=1.000000D+00  E=-2.474630D-01
+              MO Center=  4.7D-16, -5.1D-14,  2.8D-29, r^2= 3.2D-01
    Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
   ----- ------------  ---------------      ----- ------------  ---------------
-     5      0.999989  2 F  py         
+     4      0.999958  1 F  py         
 
- Vector    6  Occ=0.000000D+00  E=-4.515758D-02
-              MO Center= -1.3D-11,  1.3D-11,  8.5D-01, r^2= 1.3D+00
+
+                     DFT Final Beta Molecular Orbital Analysis
+                     -----------------------------------------
+
+ Vector    1  Occ=1.000000D+00  E=-2.475422D+01
+              MO Center= -7.2D-16, -7.2D-16, -7.3D-16, r^2= 1.1D-02
    Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
   ----- ------------  ---------------      ----- ------------  ---------------
-     1      0.752685  1 H  s                  6      0.724339  2 F  pz         
-     3     -0.082265  2 F  s          
+     1      0.997046  1 F  s          
+
+ Vector    2  Occ=1.000000D+00  E=-9.978440D-01
+              MO Center=  5.7D-14,  5.7D-14,  4.6D-14, r^2= 3.4D-01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     2      1.028096  1 F  s                  1     -0.251064  1 F  s          
+
+ Vector    3  Occ=1.000000D+00  E=-2.114336D-01
+              MO Center= -5.7D-14, -5.5D-14, -1.9D-29, r^2= 3.2D-01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     3      0.720945  1 F  px                 4      0.692993  1 F  py         
+
+ Vector    4  Occ=1.000000D+00  E=-2.114336D-01
+              MO Center=  1.1D-15, -1.2D-15,  6.7D-31, r^2= 3.2D-01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     4     -0.720945  1 F  py                 3      0.692993  1 F  px         
+
+ Vector    5  Occ=0.000000D+00  E= 1.347229D-02
+              MO Center=  1.1D-29, -5.1D-30, -4.5D-14, r^2= 3.2D-01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     5      1.000000  1 F  pz         
 
 
- center of mass
- --------------
- x =   0.00000000 y =   0.00000000 z =   3.31988043
+   alpha - beta orbital overlaps 
+   ----------------------------- 
 
- moments of inertia (a.u.)
- ------------------
-          11.697098148695           0.000000000000           0.000000000000
-           0.000000000000          11.697098148695           0.000000000000
-           0.000000000000           0.000000000000           0.000000000000
 
-     Multipole analysis of the density
-     ---------------------------------
+   alpha      1      2      3      4      5
+    beta      1      2      5      3      4
+ overlap   1.000  1.000  1.000  0.727  0.727
 
-     L   x y z        total         alpha         beta         nuclear
-     -   - - -        -----         -----         ----         -------
-     0   0 0 0     -0.000000     -5.000000     -5.000000     10.000000
-
-     1   1 0 0     -0.000000     -0.000000     -0.000000      0.000000
-     1   0 1 0      0.000000      0.000000      0.000000      0.000000
-     1   0 0 1     -0.239328    -15.851633    -15.851633     31.463938
-
-     2   2 0 0     -3.560327     -1.780163     -1.780163      0.000000
-     2   1 1 0      0.000000      0.000000      0.000000      0.000000
-     2   1 0 1      0.000000      0.000000      0.000000      0.000000
-     2   0 2 0     -3.560327     -1.780163     -1.780163      0.000000
-     2   0 1 1     -0.000000     -0.000000     -0.000000      0.000000
-     2   0 0 2     -3.833801    -56.915755    -56.915755    109.997708
+     --------------------------
+     Expectation value of S2:  
+     --------------------------
+      <S2> =      0.7500 (Exact =     0.7500)
 
 
  Parallel integral file used       1 records with       0 large values
 
 
- Task  times  cpu:        0.1s     wall:        0.2s
+ Task  times  cpu:        0.1s     wall:        0.1s
  Summary of allocated global arrays
 -----------------------------------
   No active global arrays
@@ -353,11 +349,11 @@
                          ------------------------------
 
        create   destroy   get      put      acc     scatter   gather  read&inc
-calls:  186      174     2112      273     1285        0        0      172     
+calls:  134      129      613      248      259        0        0       91     
 number of processes/call 0.00e+00 0.00e+00 0.00e+00 0.00e+00 0.00e+00
-bytes total:             2.22e+05 5.05e+04 1.09e+05 0.00e+00 0.00e+00 1.38e+03
+bytes total:             9.58e+04 2.35e+04 5.18e+04 0.00e+00 0.00e+00 7.28e+02
 bytes remote:            0.00e+00 0.00e+00 0.00e+00 0.00e+00 0.00e+00 0.00e+00
-Max memory consumed for GA by this process: 11232 bytes
+Max memory consumed for GA by this process: 13000 bytes
 MA_summarize_allocated_blocks: starting scan ...
 MA_summarize_allocated_blocks: scan completed: 0 heap blocks, 0 stack blocks
 MA usage statistics:
@@ -368,9 +364,9 @@ MA usage statistics:
 	current number of blocks	         0	         0
 	maximum number of blocks	        21	        53
 	current total bytes		         0	         0
-	maximum total bytes		   2627648	  22509912
-	maximum total K-bytes		      2628	     22510
-	maximum total M-bytes		         3	        23
+	maximum total bytes		   1940064	  22509928
+	maximum total K-bytes		      1941	     22510
+	maximum total M-bytes		         2	        23
 
 
                                 NWChem Input Module
@@ -433,4 +429,4 @@ MA usage statistics:
       T. Nakajima, S. Niu, L. Pollack, M. Rosing, K. Glaesemann, G. Sandrone,
       M. Stave, H. Taylor, G. Thomas, J. H. van Lenthe, A. T. Wong, Z. Zhang.
 
- Total times  cpu:        0.1s     wall:        0.2s
+ Total times  cpu:        0.1s     wall:        0.1s
