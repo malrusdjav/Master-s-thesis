@@ -2,6 +2,10 @@
 NH3 with ase-nwchem
 ====================
 
+We have the ammonia molecule which we study using methods molecular physics.
+
+We optimize the molecule using the DFT methods of the open-source NWChem program. 
+
 Calculation of data on the properties of the ammonia molecule:
 1) average distance between N and H atoms  in the molecule
 2) average angle between HNH atoms in the molecule

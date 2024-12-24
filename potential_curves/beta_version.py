@@ -109,7 +109,7 @@ fig, ax = plt.subplots()
 ax.plot(d, xc[f'{exc_corr[0]}'][f'{bs[0]}'][1], d, xc[f'{exc_corr[0]}'][f'{bs[1]}'][1], d,  xc[f'{exc_corr[0]}'][f'{bs[2]}'][1], '-o')
 ax.set_xlabel('Distance')
 ax.set_ylabel('Energy')
-ax.set_title(f'Potential curves for the HF molecule, {exc_corr[1]}')
+ax.set_title(f'Potential curves for the HF molecule, {exc_corr[0]}')
 plt.legend([f'{exc_corr[0], bs[0]}', f'{exc_corr[0], bs[1]}', f'{exc_corr[0], bs[2]}'], loc="upper right")
 plt.show()
 
@@ -123,6 +123,30 @@ plt.legend([f'{exc_corr[1], bs[0]}', f'{exc_corr[1], bs[1]}', f'{exc_corr[1], bs
 plt.show()
 
 
+fig, ax = plt.subplots()
+ax.plot(d, xc[f'{exc_corr[0]}'][f'{bs[0]}'][1], d, xc[f'{exc_corr[1]}'][f'{bs[0]}'][1], '-o')
+ax.set_xlabel('Distance')
+ax.set_ylabel('Energy')
+ax.set_title(f'Potential curves for the HF molecule, {bs[0]}')
+plt.legend([f'{exc_corr[0], bs[0]}', f'{exc_corr[1], bs[0]}'], loc="upper right")
+plt.show()
 
+
+fig, ax = plt.subplots()
+ax.plot(d, xc[f'{exc_corr[0]}'][f'{bs[1]}'][1], d, xc[f'{exc_corr[1]}'][f'{bs[1]}'][1], '-o')
+ax.set_xlabel('Distance')
+ax.set_ylabel('Energy')
+ax.set_title(f'Potential curves for the HF molecule, {bs[1]}')
+plt.legend([f'{exc_corr[0], bs[1]}', f'{exc_corr[1], bs[1]}'], loc="upper right")
+plt.show()
+
+
+fig, ax = plt.subplots()
+ax.plot(d, xc[f'{exc_corr[0]}'][f'{bs[0]}'][1], d, xc[f'{exc_corr[0]}'][f'{bs[1]}'][1], d, xc[f'{exc_corr[0]}'][f'{bs[2]}'][1],d, xc[f'{exc_corr[1]}'][f'{bs[0]}'][1],d, xc[f'{exc_corr[1]}'][f'{bs[1]}'][1],d, xc[f'{exc_corr[1]}'][f'{bs[2]}'][1], '-o')
+ax.set_xlabel('Distance')
+ax.set_ylabel('Energy')
+ax.set_title(f'Potential curves for the HF molecule, {bs[2]}')
+plt.legend([f'{exc_corr[0], bs[2]}', f'{exc_corr[1], bs[2]}'], loc="upper right")
+plt.show()
 
 

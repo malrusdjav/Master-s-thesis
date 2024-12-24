@@ -38,7 +38,7 @@
 
     hostname        = DESKTOP-M7D5GNM
     program         = nwchem
-    date            = Fri Nov  8 14:45:15 2024
+    date            = Mon Dec 16 15:17:16 2024
 
     compiled        = Sat_Apr_09_17:12:10_2022
     source          = /build/nwchem-f1f4gx/nwchem-7.0.2/build-openmpi
@@ -58,10 +58,10 @@
            Memory information
            ------------------
 
-    heap     =   13107196 doubles =    100.0 Mbytes
-    stack    =   13107201 doubles =    100.0 Mbytes
+    heap     =   13107198 doubles =    100.0 Mbytes
+    stack    =   13107195 doubles =    100.0 Mbytes
     global   =   26214400 doubles =    200.0 Mbytes (distinct from heap & stack)
-    total    =   52428797 doubles =    400.0 Mbytes
+    total    =   52428793 doubles =    400.0 Mbytes
     verify   = yes
     hardfail = no 
 
@@ -219,18 +219,18 @@
 
  Integral file          = /home/ruslan/work/Master-s-thesis/potential_curves/nwchem/nwchem.aoints.0
  Record size in doubles =    65536    No. of integs per rec  =    43688
- Max. records in memory =        2    Max. records in file   =  1852546
+ Max. records in memory =        2    Max. records in file   =  1827278
  No. of bits per label  =        8    No. of bits per value  =       64
 
 
  Grid_pts file          = /home/ruslan/work/Master-s-thesis/potential_curves/nwchem/nwchem.gridpts.0
  Record size in doubles =  12289        No. of grid_pts per rec  =   3070
- Max. records in memory =      9        Max. recs in file   =   9879449
+ Max. records in memory =      9        Max. recs in file   =   9744697
 
 
            Memory utilization after 1st SCF pass: 
-           Heap Space remaining (MW):       12.86            12864644
-          Stack Space remaining (MW):       13.11            13107036
+           Heap Space remaining (MW):       12.86            12864646
+          Stack Space remaining (MW):       13.11            13107028
 
    convergence    iter        energy       DeltaE   RMS-Dens  Diis-err    time
  ---------------- ----- ----------------- --------- --------- ---------  ------
@@ -364,7 +364,7 @@ MA usage statistics:
 	current number of blocks	         0	         0
 	maximum number of blocks	        21	        53
 	current total bytes		         0	         0
-	maximum total bytes		   1940064	  22509928
+	maximum total bytes		   1940048	  22509944
 	maximum total K-bytes		      1941	     22510
 	maximum total M-bytes		         2	        23
 
@@ -429,4 +429,4 @@ MA usage statistics:
       T. Nakajima, S. Niu, L. Pollack, M. Rosing, K. Glaesemann, G. Sandrone,
       M. Stave, H. Taylor, G. Thomas, J. H. van Lenthe, A. T. Wong, Z. Zhang.
 
- Total times  cpu:        0.1s     wall:        0.1s
+ Total times  cpu:        0.1s     wall:        0.2s

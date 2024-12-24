@@ -1,6 +1,6 @@
 from ase import Atoms
 from ase.optimize import BFGS
-from ase.calculators.nwchem import NWChem
+from ase.calculators.nwchem import NWChem, DFT
 import ase.io
 from ase.visualize import view
 from ase.io import write
